@@ -113,6 +113,6 @@ app.get('/works-in-chrome-and-safari', (req, res) => {
     });
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Open your browser and navigate to http://localhost:${port}`)
 });
